@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage("Quality Assurance") {
-            docker "weboaks/node-karma-protractor-chrome:headless"
+            agent {
+                docker "weboaks/node-karma-protractor-chrome:headless"
+            }
 
             stages {
                 stage("Install dependencies") {

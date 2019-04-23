@@ -41,17 +41,17 @@ pipeline {
         }
 
         stage("Analysis") {
+            agent {
+                docker "quay.io/ukhomeofficedigital/sonar-scanner-node:latest"
+            }
+
             when {
                 branch "master"
             }
 
             steps {
-                script {
-                    scannerHome = tool "sonar-scanner-3.3.0"
-                }
-
                 withSonarQubeEnv("sonar.jmerle.dev") {
-                    sh "${scannerHome}/bin/sonar-scanner"
+                    sh "sonar-scanner"
                 }
             }
         }

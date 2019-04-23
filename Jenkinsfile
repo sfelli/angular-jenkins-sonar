@@ -42,7 +42,7 @@ pipeline {
 
         stage("Analysis") {
             agent {
-                docker "5gsystems/node-sonar-scanner"
+                docker "noenv/node-sonar-scanner"
             }
 
             when {

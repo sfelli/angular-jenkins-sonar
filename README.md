@@ -1,5 +1,11 @@
 # Angular Jenkins Sonar
 
+[![Build Status](https://jenkins.jmerle.dev/buildStatus/icon?job=angular-jenkins-sonar%2Fmaster)](https://jenkins.jmerle.dev/job/angular-jenkins-sonar/job/master/)
+[![Quality Gate Status](https://sonar.jmerle.dev/api/project_badges/measure?project=jmerle%3Aangular-jenkins-sonar&metric=alert_status)](https://sonar.jmerle.dev/dashboard?id=jmerle%3Aangular-jenkins-sonar)
+[![Coverage](https://sonar.jmerle.dev/api/project_badges/measure?project=jmerle%3Aangular-jenkins-sonar&metric=coverage)](https://sonar.jmerle.dev/dashboard?id=jmerle%3Aangular-jenkins-sonar)
+[![Bugs](https://sonar.jmerle.dev/api/project_badges/measure?project=jmerle%3Aangular-jenkins-sonar&metric=bugs)](https://sonar.jmerle.dev/dashboard?id=jmerle%3Aangular-jenkins-sonar)
+[![Vulnerabilities](https://sonar.jmerle.dev/api/project_badges/measure?project=jmerle%3Aangular-jenkins-sonar&metric=vulnerabilities)](https://sonar.jmerle.dev/dashboard?id=jmerle%3Aangular-jenkins-sonar)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 This is a little playground to get Angular working with Jenkins as build server and SonarQube for static code analysis with code coverage reporting.

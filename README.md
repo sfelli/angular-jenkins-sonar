@@ -1,6 +1,22 @@
-# AngularJenkinsSonar
+# Angular Jenkins Sonar
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+
+This is a little playground to get Angular working with Jenkins as build server and SonarQube for static code analysis with code coverage reporting.
+
+## Changes
+
+Here are the changes that were made to the standard angular-cli project:
+- Prettier has been added with some additional tools: `npm i -D husky lint-staged prettier tslint-config-prettier prettier-check`
+- The `package.json` file has been updated with new `test:coverage`, `lint`, `lint:fix` and `prettier` commands, and with `husky`, `lint-staged` and `prettier` configuration
+- The `tslint.json` file has been updated to extend `tslint-config-prettier`
+- The `Jenkinsfile` file has been added with the Jenkins pipeline configuration
+- The `.editorconfig` file has been updated with Jenkinsfile configuration
+- The `is-ci` package has been added to detect whether we're running in a build environment or not
+- The `src/karma.conf.js` and the `e2e/protractor.conf.js` files have been updated to make tests run successfully in a Docker container
+- The `README.md` file has been updated with Jenkins and SonarQube badges
+- The `sonar-project.properties` file has been added with Sonar Scanner configuration for code coverage reporting
+- The `src/app/app-routing.module.spec.ts` file has been added to achieve 100% test coverage
 
 ## Development server
 

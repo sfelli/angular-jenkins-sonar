@@ -15,7 +15,7 @@ Here are the changes that were made to the standard angular-cli project:
 - The `is-ci` package has been added to detect whether we're running in a build environment or not
 - The `src/karma.conf.js` and the `e2e/protractor.conf.js` files have been updated to make tests run successfully in a Docker container
 - The `README.md` file has been updated with Jenkins and SonarQube badges
-- The `sonar-project.properties` file has been added with Sonar Scanner configuration for code coverage reporting
+- The `sonar-project.properties` file has been added with Sonar Scanner configuration
 - The `src/app/app-routing.module.spec.ts` file has been added to achieve 100% test coverage
 
 ## Development server

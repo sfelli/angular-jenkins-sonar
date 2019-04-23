@@ -42,7 +42,10 @@ pipeline {
 
         stage("Analysis") {
             agent {
-                docker "noenv/node-sonar-scanner"
+                docker {
+                    image "noenv/node-sonar-scanner"
+                    args "--network web"
+                }
             }
 
             when {

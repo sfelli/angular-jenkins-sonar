@@ -42,7 +42,7 @@ pipeline {
 
         stage("Analysis") {
             agent {
-                docker "quay.io/ukhomeofficedigital/sonar-scanner-node:latest"
+                docker "5gsystems/node-sonar-scanner"
             }
 
             when {

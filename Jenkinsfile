@@ -29,7 +29,6 @@ pipeline {
                 stage("Unit tests") {
                     steps {
                         sh "npm run test:coverage"
-                        stash name: "code-coverage", includes: "coverage/angular-jenkins-sonar/lcov.info"
                     }
                 }
 
@@ -54,8 +53,6 @@ pipeline {
             }
 
             steps {
-                unstash "code-coverage"
-
                 withSonarQubeEnv("sonar.jmerle.dev") {
                     sh "sonar-scanner -Dsonar.projectVersion=${BUILD_NUMBER}"
                 }

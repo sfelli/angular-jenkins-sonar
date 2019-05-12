@@ -45,6 +45,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-sonarqube-reporter": "^1.2.3",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0",
     "prettier-check": "^2.0.0",
